@@ -1,6 +1,7 @@
-export interface SocialMediaChannel {
+export interface SocialMedia {
+    name: string;
     icon: string;
-    follower: number;
-    description: string;
-    difference: number;
+    followers: number;
+    label: string;
+    kpi: string;
 }
