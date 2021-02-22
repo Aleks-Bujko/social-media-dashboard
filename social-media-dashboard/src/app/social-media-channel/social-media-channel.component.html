@@ -1,6 +1,6 @@
 <div *ngFor="let socialMediaChannel of socialMediaChannels" class="channel-wrapper">
-    <img src="{{socialMediaChannel.icon}}" height="" width=""/>
-    <p>{{socialMediaChannel.name}}</p>
+    <img src="{{socialMediaChannel.icon}}" height="20" width="20" class="social-media-icon"/>
+    <p class="username">{{socialMediaChannel.username}}</p>
     <p class="follower-count">{{socialMediaChannel.followers}}</p>
-    <p>{{socialMediaChannel.label}}</p>
+    <p class="follower-label">{{socialMediaChannel.label}}</p>
 </div> 

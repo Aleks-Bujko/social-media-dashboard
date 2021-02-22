@@ -1,6 +1,6 @@
-<div>
-    <span>KPI NAME</span>
-    <img />
-    <span>KPI WERT</span>
-    <span>KPI DIFFERENCE</span>
-</div>
+<div *ngFor="let socialMediaChannel of socialMediaChannels" class="kpi-wrapper">
+    <img src="{{socialMediaChannel.icon}}" height="20" width="20" class="social-media-icon"/>
+    <p class="username">{{socialMediaChannel.username}}</p>
+    <p class="follower-count">{{socialMediaChannel.followers}}</p>
+    <p class="follower-label">{{socialMediaChannel.label}}</p>
+</div> 
