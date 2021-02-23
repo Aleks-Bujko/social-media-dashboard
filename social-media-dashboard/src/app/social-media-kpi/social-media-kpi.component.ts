@@ -10,7 +10,6 @@ export class SocialMediaKpiComponent implements OnInit {
 
   socialMediaChannels = SocialMediaDetail;
 
-
   constructor() { }
 
   ngOnInit(): void {

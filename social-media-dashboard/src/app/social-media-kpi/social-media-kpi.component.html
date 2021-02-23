@@ -1,6 +1,22 @@
-<div *ngFor="let socialMediaChannel of socialMediaChannels" class="kpi-wrapper">
-    <img src="{{socialMediaChannel.icon}}" height="20" width="20" class="social-media-icon"/>
-    <p class="username">{{socialMediaChannel.username}}</p>
-    <p class="follower-count">{{socialMediaChannel.followers}}</p>
-    <p class="follower-label">{{socialMediaChannel.label}}</p>
-</div> 
+<div class="kpi-first-row">
+    <div *ngFor="let socialMediaKpi of socialMediaChannels" class="kpi-wrapper">
+            <div class="single-kpi-first-row">
+                <p class="kpi-name">{{socialMediaKpi.kpis.kpi1}}</p>
+                <img src="{{socialMediaKpi.icon}}" height="20" width="20" class="social-media-icon"/>
+            </div>
+            <div class="single-kpi-second-row">
+                <p class="kpi-value">{{socialMediaKpi.kpis.kpi1Value}}</p>
+            </div>
+    </div> 
+</div>
+<div class="kpi-second-row">
+    <div *ngFor="let socialMediaKpi of socialMediaChannels" class="kpi-wrapper">
+            <div class="single-kpi-first-row">
+                <p class="kpi-name">{{socialMediaKpi.kpis.kpi2}}</p>
+                <img src="{{socialMediaKpi.icon}}" height="20" width="20" class="social-media-icon"/>
+            </div>
+            <div class="single-kpi-second-row">
+                <p class="kpi-value">{{socialMediaKpi.kpis.kpi2Value}}</p>
+            </div>
+    </div> 
+</div>
