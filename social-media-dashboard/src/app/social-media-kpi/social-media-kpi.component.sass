@@ -1,7 +1,8 @@
 @import '../../styles.sass'
+@import '../social-media-channel/social-media-channel.component.sass'
 
 .kpi-wrapper
-    background-color: $background-grey
+    background-color: $theme-light-background
     padding: 1.875rem 2rem
     margin: 0 1.5rem 0 0
     border-radius: 5px
@@ -12,13 +13,13 @@
 .kpi-name
     font-size: 0.9rem
     font-weight: 700
-    color: $dark-grey
+    color: $theme-light-grey
     margin: 0
 
 .kpi-value
     font-size: 2rem
     font-weight: 700
-    color: $dark-blue
+    color: $theme-light-blue
     margin: 0
 
 .kpi-first-row
@@ -39,3 +40,6 @@
 
 .single-kpi-second-row
     padding: 1rem 0 0 0
+    display: flex
+    justify-content: space-between
+    align-items: baseline

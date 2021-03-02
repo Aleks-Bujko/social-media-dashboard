@@ -1,7 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
-$background-grey: #F0F2FA
-$dark-blue: #1E202A
-$dark-grey:#63687E
+$theme-light-bg-color: #ffffff
+$theme-light-background: #F0F2FA
+$theme-light-blue: #1E202A
+$theme-light-grey:#63687E
+$theme-dark-bg-color: #1E202A
+$theme-dark-background: #252A41
+$theme-dark-blue: #1E202A
+$theme-dark-grey:#8B97C6
 $global-green: #1DB489
 $tablet-width: "min-width: 768px"
 $desktop-width: "min-width: 1010px"
@@ -14,18 +19,24 @@ body
     display: flex
     align-items: center
     justify-content: center
-    color: $dark-blue
+
+.theme-light    
+    color: $theme-light-blue
+    background-color: $theme-light-bg-color
 
 h1
     font-size: 2rem
 
 h2
     font-size: 1.5rem
-    color: $dark-grey
+    color: $theme-light-grey
 
 h3
     font-size: 1.25rem
 
 p
     font-size: 1rem
+
+.dark-mode 
+    color: #fff !important
 
