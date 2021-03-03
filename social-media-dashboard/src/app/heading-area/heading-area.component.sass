@@ -1,13 +1,24 @@
 @import '../../styles.sass'
+
+.header-area
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: space-between
+
+.dark-mode-wrapper
+    margin: 0 2rem 0 0
+
+.dark-mode-text
+    padding: 0 1rem 0 0
+    color: var(--theme-blue)
     
-/* The switch - the box around the slider */
 .dark-mode-switch 
     position: relative
     display: inline-block
     width: 50px
     height: 25px
 
-/* Hide default HTML checkbox */
 .dark-mode-switch input 
     opacity: 0
     width: 0
@@ -50,3 +61,4 @@ input
 
     &:checked + .dark-mode-slider:before 
         transform: translateX(26px)
+    

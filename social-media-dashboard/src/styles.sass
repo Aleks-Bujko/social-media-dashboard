@@ -5,11 +5,23 @@ $theme-light-blue: #1E202A
 $theme-light-grey:#63687E
 $theme-dark-bg-color: #1E202A
 $theme-dark-background: #252A41
-$theme-dark-blue: #1E202A
+$theme-dark-blue: #ffffff
 $theme-dark-grey:#8B97C6
+
 $global-green: #1DB489
 $tablet-width: "min-width: 768px"
 $desktop-width: "min-width: 1010px"
+
+:root[theme=light]
+    --theme-bg-color: #{$theme-light-bg-color}
+    --theme-background: #{$theme-light-background}
+    --theme-blue: #{$theme-light-blue}
+    --theme-grey: #{$theme-light-grey} 
+:root[theme=dark]
+    --theme-bg-color: #{$theme-dark-bg-color}
+    --theme-background: #{$theme-dark-background}
+    --theme-blue: #{$theme-dark-blue}
+    --theme-grey: #{$theme-dark-grey}
 
 html
     min-height: 100%
@@ -19,24 +31,19 @@ body
     display: flex
     align-items: center
     justify-content: center
-
-.theme-light    
-    color: $theme-light-blue
-    background-color: $theme-light-bg-color
+    background-color: var(--theme-bg-color)
 
 h1
     font-size: 2rem
+    color: var(--theme-blue)
 
 h2
     font-size: 1.5rem
-    color: $theme-light-grey
+    color: var(--theme-grey)
 
 h3
     font-size: 1.25rem
 
 p
     font-size: 1rem
-
-.dark-mode 
-    color: #fff !important
 
