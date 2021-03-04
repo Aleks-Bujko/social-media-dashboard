@@ -1,12 +1,27 @@
+@import '../styles.sass'
+
 .wrapper
-    margin: 2rem 19rem
+    margin: 2rem auto
     
 .dashboard-block
     display: flex
-    flex-direction: row
+    flex-direction: column
     margin: 2rem auto
+    align-items: center
 
 .kpi-block
     display: flex
-    flex-direction: row
+    flex-direction: column
     flex-wrap: wrap
+    align-items: center
+
+@media($desktop-width)
+    .wrapper
+        margin: 2rem 19rem
+    .dashboard-block
+        flex-direction: row
+        align-items: normal
+    .kpi-block
+        flex-direction: row
+        align-items: normal
+

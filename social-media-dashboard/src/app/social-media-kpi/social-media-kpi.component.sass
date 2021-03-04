@@ -3,10 +3,10 @@
 
 .kpi-wrapper
     background-color: var(--theme-background)
-    padding: 1.875rem 2rem
-    margin: 0 1.5rem 0 0
+    padding: 1rem
+    margin: 1rem 0.5rem
     border-radius: 5px
-    width: 10vw
+    width: 54vw
     display: flex
     flex-direction: column
 
@@ -25,11 +25,11 @@
 .kpi-first-row
     margin: 0 0 1.5rem
     display: flex
-    flex-direction: row
+    flex-direction: column
 
 .kpi-second-row
     display: flex
-    flex-direction: row
+    flex-direction: column
 
 .single-kpi-first-row
     display: flex
@@ -43,3 +43,13 @@
     display: flex
     justify-content: space-between
     align-items: baseline
+
+@media($desktop-width)
+    .kpi-first-row
+        flex-direction: row
+    .kpi-second-row
+        flex-direction: row
+    .kpi-wrapper
+        padding: 1.875rem 2rem
+        margin: 0 1.5rem 0 0
+        width: 10vw
